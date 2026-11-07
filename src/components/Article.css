@@ -1,4 +1,7 @@
 article
 {
     min-height:calc(100vh -95px - 131px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

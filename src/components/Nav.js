@@ -1,3 +1,5 @@
+import './Nav.css'
+
 function Nav(props)
 {
     console.log(props)
@@ -8,11 +10,13 @@ return(
                 Object.keys(props.menu).map
                 (
                     element =>
-                    (
-                        <li>
+                    {
+                        return(
+                             <li key={element}>
                             <a href={props.menu[element]}>{element}</a>
                         </li>
-                    )
+                        )
+                    }
                 )
             }
         </ul>
